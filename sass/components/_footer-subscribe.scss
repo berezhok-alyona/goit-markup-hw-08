@@ -1,0 +1,76 @@
+.subscribe {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 60px;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+
+@media screen and (min-width: 768px) {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  width: unset;
+  margin-top: 53px;
+  align-items: flex-start;
+  margin-right: 0px;
+  // margin-left: 93px; 
+}  
+  }
+  
+  .sign-in {
+    @include secondaryTitle($white-color);
+    margin-bottom: 20px;  
+    display:block;
+  }
+
+  .subscribe-input {
+  display: flex;
+  height: 50px;
+  border: 1px solid $subscribe-btn-border;
+  border-radius: 4px;
+  background-color: inherit;
+  color: $subscribe-btn-color;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 450px; 
+  }
+  @media screen and (min-width: 1200px) {
+  width: 358px;
+  height: 50px;
+  display: inline-block;
+  } 
+
+  &::placeholder {
+  padding-top: 15px;
+  padding-left: 16px;
+  }
+  }
+  
+  .subscribe-btn {
+    @include btn;
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+ padding: 10px 62px 10px 29px; 
+
+  @media screen and (min-width: 1200px) {
+  margin-left: 12px;
+  display: inline-block;
+  margin-top: 0px;
+  }
+  }
+  
+  .send-icon {
+    display: block;
+    position: absolute;
+    right: 28px;
+    top: 13px;
+    margin-left: 10px;
+  }

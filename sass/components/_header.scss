@@ -1,0 +1,56 @@
+.page-header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid $header-border-color;
+    background-color: $white-color;
+    
+  }
+
+  // .header-container {
+  //   @extend %align-centeredFlex;
+  //   margin: 0px;
+  // }
+
+  .nav-icons {
+  display: block;
+  position: absolute;
+  top: 22px;
+  right: 23px;
+  align-items: baseline;
+  color: currentColor;
+  cursor: pointer;
+
+  &:hover, 
+  &:focus {
+    fill:$accent-color;
+  }
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+
+@media screen and (min-width: 768px) {
+display: none;
+}
+
+& .icon-cross {
+  display: none;
+}
+
+&.is-open .icon-cross {
+  display: block;
+}
+
+&.is-open .icon-menu {
+  display: none;
+}
+
+
+}
+
+ 

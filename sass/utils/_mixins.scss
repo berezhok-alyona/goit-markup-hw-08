@@ -1,0 +1,67 @@
+@mixin logoText ($color) {
+    font-family: $logo-font, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $color;   
+}
+
+@mixin flex ($type:space-between) {
+    display: flex;
+    justify-content: $type;
+}
+
+@mixin sectionTitle ($px) {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: $px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;  
+}
+
+@mixin secondaryTitle ($color) {
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $color; 
+}
+
+@mixin headerIcons ($px) {
+    margin-right: $px;
+    fill: currentColor;   
+}
+
+
+@mixin  btn ($bg-color:$accent-color) {
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    min-width: 200px;
+    background: $bg-color;
+    box-shadow: 0px 4px 4px $color-shadow;
+    color: $white-color;
+    cursor: pointer;
+}
+
+@mixin footerContacts ($color) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $color;  
+}

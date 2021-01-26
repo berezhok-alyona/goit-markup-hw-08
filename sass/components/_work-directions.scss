@@ -1,0 +1,58 @@
+.work-directions {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+
+  & h2 {
+  @include sectionTitle(36px);
+    padding-top: 0px;
+  }
+  
+  & .images {
+  @include flex;
+    margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0px;     
+  }
+ }
+}
+  
+  .thumb {
+    position: relative;
+    display: block;
+  }
+  
+  .images .text {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    padding-top: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    width: 100%;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $white-color;
+
+&:nth-child(1) {
+    padding-left: 83px;
+    padding-right: 82px;
+  }
+  
+&:nth-child(2) {
+    padding-left: 86px;
+    padding-right: 85px;
+  }
+  
+&:nth-child(3) {
+    padding-left: 91px;
+    padding-right: 90px;
+  }
+  }
+  
+  
+  

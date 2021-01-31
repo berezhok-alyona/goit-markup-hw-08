@@ -30,9 +30,9 @@
 }
 
 .menu-button {
-  display: contents;
-  margin: 0px;
-  padding: 0px;
+display: contents;
+margin: 0px;
+padding: 0px;
 
 @media screen and (min-width: 768px) {
 display: none;
@@ -49,8 +49,6 @@ display: none;
 &.is-open .icon-menu {
   display: none;
 }
-
-
 }
 
  

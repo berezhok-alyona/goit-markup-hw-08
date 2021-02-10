@@ -432,29 +432,27 @@ img {
   fill: #2196f3;
 }
 
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.header-container button {
+  display: contents;
   margin: 0px;
   padding: 0px;
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .header-container button {
     display: none;
   }
 }
 
-.menu-button .icon-cross {
+.header-container button .icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.header-container button.is-open .icon-cross {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.header-container button.is-open .icon-menu {
   display: none;
 }
 
